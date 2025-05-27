@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Two-Column Layout</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f4f7fa;
+    }
+    .sidebar {
+      background-color: #343a40;
+      color: white;
+      padding: 20px;
+      border-radius: 5px;
+    }
+    .content {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 5px;
+    }
+    .sidebar h3, .content h3 {
+      color: #495057;
+    }
+    .footer {
+      background-color: #343a40;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-3 sidebar">
+        <h3>Sidebar</h3>
+        <p>This is the sidebar area where you can place your links or additional content.</p>
+      </div>
+      <div class="col-md-9 content">
+        <h3>Main Content</h3>
+        <p>This is the content area. Add your main content here. The sidebar will remain on the left side of the page.</p>
+        <button class="btn btn-primary" id="alertBtn">Click Me</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>&copy; 2025 Your Website</p>
+  </div>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // JavaScript for interactivity
+    document.getElementById('alertBtn').addEventListener('click', function() {
+      alert('Button clicked!');
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+the commands for bootstrap sass project are 
+-->Start by creating a new directory for your project and initialize npm:
+
+	bash:
+		mkdir bootstrap-sass-project
+		cd bootstrap-sass-project
+		npm init -y
+-->installing all packages
+    npm install bootstrap@5.1.3 sass --save-dev
+-->create one's project structure
+	mkdir src
+	mkdir src/scss
+	touch src/scss/style.scss
+-->Inside the src/scss/style.scss file, import Bootstrap's source files
+	// src/scss/style.scss
+	@import '~bootstrap/scss/bootstrap';
+--> run the sass compiler
+	npm run build-css
+
+

@@ -1,0 +1,38 @@
+/* =====================
+   General Reset
+   ===================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =====================
+   Body Styling
+   ===================== */
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: rgba(0, 0, 0, 0.85);
+    background-color: #e0f7fa;
+    /* Fallback color */
+    background-image: url('https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1400&q=60');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* =====================
+   Header and Footer
+   ===================== */
+header,
+footer {
+    background-color: #007f5f;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* ==*
