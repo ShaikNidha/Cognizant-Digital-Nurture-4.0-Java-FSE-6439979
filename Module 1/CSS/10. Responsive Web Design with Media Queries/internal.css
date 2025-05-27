@@ -1,0 +1,41 @@
+/* =====================
+   Responsive Design: Mobile First
+   ===================== */
+@media screen and (max-width: 768px) {
+
+    /* Stack navigation links vertically */
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        padding: 0.5rem 0;
+        display: block;
+    }
+
+    /* Reduce font size globally */
+    body {
+        font-size: 90%;
+    }
+
+    /* Scale down headings */
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    /* Adjust event images */
+    .event-img {
+        width: 90%;
+        height: auto;
+        margin-bottom: 1rem;
+    }
+
+    /* Adjust form width */
+    form {
+        width: 90%;
+        margin: auto;
+    }
+
+    /* Use percentages and viewport units */
+    main {
