@@ -1,0 +1,42 @@
+<!-- File: exercise6_event_handling.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Feedback</title>
+</head>
+<body>
+
+<form>
+  Phone: <input type="text" id="phone" onblur="validatePhone()"><br>
+  Event Type: 
+  <select onchange="displayFee(this)">
+    <option value="10">Music - $10</option>
+    <option value="20">Art - $20</option>
+  </select>
+  <p id="feeDisplay"></p>
+  <button type="button" onclick="alert('Feedback submitted')">Submit</button><br>
+  <img src="thumb.jpg" width="100" ondblclick="this.width=200;"><br>
+  Feedback:
+  <textarea onkeydown="countChar(this)"></textarea><br>
+  <p>Character Count: <span id="charCount">0</span></p>
+</form>
+
+<script>
+function validatePhone() {
+  let phone = document.getElementById('phone').value;
+  if (!/^\d{10}$/.test(phone)) {
+    alert("Enter 10-digit phone number.");
+  }
+}
+function displayFee(select) {
+  document.getElementById('feeDisplay').innerText = "Fee: $" + select.value;
+}
+function countChar(el) {
+  document.getElementById('charCount').innerText = el.value.length;
+}
+</script>
+
+</body>
+</html>
+

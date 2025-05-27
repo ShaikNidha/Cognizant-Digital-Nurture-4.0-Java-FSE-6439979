@@ -1,0 +1,33 @@
+<!-- File: exercise8_user_preferences.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User Preferences</title>
+</head>
+<body>
+
+<select id="eventSelect" onchange="savePreference(this.value)">
+  <option value="">Choose event</option>
+  <option value="music">Music</option>
+  <option value="art">Art</option>
+</select>
+<button onclick="clearPreferences()">Clear Preferences</button>
+
+<script>
+function savePreference(val) {
+  localStorage.setItem("preferredEvent", val);
+}
+window.onload = function() {
+  const saved = localStorage.getItem("preferredEvent");
+  if (saved) document.getElementById("eventSelect").value = saved;
+}
+function clearPreferences() {
+  localStorage.clear();
+  sessionStorage.clear();
+  alert("Preferences cleared");
+}
+</script>
+
+</body>
+</html>

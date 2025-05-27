@@ -1,0 +1,44 @@
+< !DOCTYPE html >
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Event Portal</title>
+                    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                    <style>
+                        .event-card {
+                            width: 200px;
+                        height: 200px;
+                        background-color: lightblue;
+                        margin: 20px;
+                        display: none; /* Initially hidden */
+        }
+                    </style>
+                </head>
+                <body>
+                    <button id="registerBtn">Register</button>
+                    <button id="showCardBtn">Show Event Cards</button>
+                    <button id="hideCardBtn">Hide Event Cards</button>
+
+                    <div class="event-card">Event 1</div>
+                    <div class="event-card">Event 2</div>
+                    <div class="event-card">Event 3</div>
+
+                    <script>
+        // Register Button Click
+                        $('#registerBtn').click(function() {
+                            alert('User Registered!');
+        });
+
+                        // Show Event Cards with fadeIn
+                        $('#showCardBtn').click(function() {
+                            $('.event-card').fadeIn();
+        });
+
+                        // Hide Event Cards with fadeOut
+                        $('#hideCardBtn').click(function() {
+                            $('.event-card').fadeOut();
+        });
+                    </script>
+                </body>
+            </html>
