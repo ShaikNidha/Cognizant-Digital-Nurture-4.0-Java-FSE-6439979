@@ -1,0 +1,41 @@
+<!-- File: exercise5_registration_form.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Event Registration</title>
+  <style>
+    form {
+      border: 1px solid #ccc;
+      padding: 10px;
+      width: 300px;
+    }
+  </style>
+</head>
+<body>
+
+<form onsubmit="showConfirmation(); return false;">
+  <label>Name: <input type="text" name="name" placeholder="Your Name" required autofocus></label><br>
+  <label>Email: <input type="email" name="email" placeholder="you@example.com" required></label><br>
+  <label>Date: <input type="date" required></label><br>
+  <label>Event Type:
+    <select required>
+      <option value="">Select</option>
+      <option>Music</option>
+      <option>Art</option>
+    </select>
+  </label><br>
+  <label>Message: <textarea placeholder="Your message..."></textarea></label><br>
+  <button type="submit">Submit</button><br>
+  <output id="confirmation"></output>
+</form>
+
+<script>
+function showConfirmation() {
+  document.getElementById('confirmation').value = "Thanks for registering!";
+}
+</script>
+
+</body>
+</html>
+
