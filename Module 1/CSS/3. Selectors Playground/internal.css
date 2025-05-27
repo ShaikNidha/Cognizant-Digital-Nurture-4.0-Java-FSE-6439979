@@ -1,0 +1,34 @@
+ =====================
+   Universal Reset
+   ===================== 
+ Reset margin and padding for all elements 
+ {
+  margin 0;
+  padding 0;
+  box-sizing border-box;
+}
+
+ =====================
+   Headings
+   ===================== 
+ Style for all h2 elements 
+h2 {
+  font-size 1.6rem;
+  color #0077cc;
+  margin-bottom 1rem;
+  border-bottom 2px solid #38b000;
+  padding-bottom 0.5rem;
+}
+
+ =====================
+   Banner Section
+   ===================== 
+ ID selector for the welcome banner 
+#mainHeader {
+  background-color #0077cc;
+  color white;
+  text-align center;
+  padding 1rem;
+  font-size 1.2rem;
+  font-weight bold;
+}

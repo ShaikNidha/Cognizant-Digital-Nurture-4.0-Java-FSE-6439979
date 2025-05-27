@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Media Object</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-white py-5">
+  <div class="container">
+    <div class="d-flex align-items-start">
+      <img src="https://via.placeholder.com/100" class="me-3 rounded-circle shadow" alt="Avatar">
+      <div>
+        <h5 class="fw-bold">Jordan Smith</h5>
+        <p class="text-muted">"Great products come from great stories. I love blending design with functionality."</p>
+        <button class="btn btn-outline-secondary btn-sm">Message</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

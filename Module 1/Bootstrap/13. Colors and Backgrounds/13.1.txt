@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard Overview</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light py-5">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="p-4 rounded bg-primary text-white shadow-sm">
+          <h4 class="fw-bold">Overview</h4>
+          <p>Quick glance at your app’s performance.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="p-4 rounded bg-warning text-dark shadow-sm">
+          <h4 class="fw-bold">Alerts</h4>
+          <p>Stay updated on new notifications and warnings.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="p-4 rounded bg-success text-white shadow-sm">
+          <h4 class="fw-bold">Analytics</h4>
+          <p>View growth and real-time user metrics.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

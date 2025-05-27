@@ -1,0 +1,35 @@
+/* =====================
+   Table Styling
+   ===================== */
+
+/* Style the overall table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    /* Combines borders */
+    margin-top: 2rem;
+    font-size: 1rem;
+    text-align: center;
+}
+
+/* Style table headers and data cells */
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    background-color: #ffffff;
+}
+
+/* Zebra striping: even rows */
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Optional: Enhance table caption */
+caption {
+    caption-side: top;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 1rem;
+    color: #0077cc;
+}
